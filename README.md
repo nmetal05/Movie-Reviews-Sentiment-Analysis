@@ -4,7 +4,7 @@ This project is a Flask web application that takes a movie review as input and r
 
 ## Deployed Version
 
-You can view the deployed version of this application at:
+You can view the deployed version of this application at :
 
 [Movie Review Sentiment Analysis](https://movie-reviews-sentiment-analysis.onrender.com)
 
@@ -20,31 +20,33 @@ You can view the deployed version of this application at:
   
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository :
 ```bash
 git clone https://github.com/nmetal05/movie-reviews-sentiment-analysis
 ```
-2. Navigate to the project directory:
+2. Navigate to the project directory  :
 ```bash
 cd movie-review-sentiment-analysis
 ```
-3. Create a virtual environment and activate it using your preffered shell:
+3. Create a virtual environment and activate it using your preffered shell :
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
-4. Install the required dependencies:
+4. Install the required dependencies :
 ```bash
 pip install -r requirements.txt
 ```
-5. Start the application locally using Gunicorn(or Flask):
+5. Start the application locally using Gunicorn(or Flask) :
 ```bash
 gunicorn app:app
 ```
 ```bash
 flask run
 ```
-6. The application will be available at <http://127.0.0.1:8000/>.
+6. The application will be available at :
+* If you used Gunicorn: <http://127.0.0.1:8000/>
+* If you used flask run: <http://127.0.0.1:5000/>
 
 ## Usage
 
