@@ -2,6 +2,12 @@
 
 This project is a Flask web application that takes a movie review as input and returns the predicted sentiment and probability of being positive or negative.
 
+## Deployed Version
+
+You can view the deployed version of this application at:
+
+[Movie Review Sentiment Analysis](https://movie-reviews-sentiment-analysis.onrender.com)
+
 ## Requirements
 
 * Python 3.6 or later
