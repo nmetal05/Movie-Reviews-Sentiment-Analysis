@@ -2,3 +2,4 @@ joblib
 flask
 bs4
 nltk
+scikit-learn
