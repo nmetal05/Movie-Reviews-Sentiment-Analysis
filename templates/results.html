@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='man.ico') }}">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-900 text-white">
+  <div class="w-full max-w-2xl p-6 bg-gray-800 rounded-lg shadow-md">
+    <h1 class="text-3xl font-bold text-center mb-6">Results</h1>
+    <div class="border border-gray-700 p-6 rounded-lg shadow-md">
+      <!-- <p class="text-gray-400 mb-2">Predicted sentiment: <span class="font-bold" :class="prediction === 'Positive' ? 'text-green-500' : 'text-red-500'">{{ prediction }}</span></p> -->
+      <p class="text-gray-400 mb-2">Predicted sentiment: <span class="font-bold {{ color_class }}">{{ prediction }}</span></p>
+      <p class="text-gray-400 mb-2">The probability of this review being positive is: <span class="font-bold text-green-500">{{ prob_pos}}</span></p>
+      <p class="text-gray-400 mb-2">The probability of this review being negative is: <span class="font-bold text-red-500">{{ prob_neg}}</span></p>
+      <p class="text-gray-400 mb-6">Rating: <span class="font-bold text-yellow-500">{{ rating }}/10</span></p>
+      <a href="/" class="block w-full mt-4 text-center bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Analyze another review</a>
+    </div>
+  </div>
+</body>
+</html>
