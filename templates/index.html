@@ -4,6 +4,28 @@
   <title>Movie Review Sentiment Analysis</title>
   <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='man.ico') }}">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('form');
+      const textarea = document.querySelector('#review');
+      const submitButton = document.querySelector('button[type="submit"]');
+
+      form.addEventListener('submit', function(event) {
+        if (textarea.value.trim() === '') {
+          alert('Please enter a review.');
+          event.preventDefault();
+        }
+      });
+
+      textarea.addEventListener('input', function() {
+        if (textarea.value.trim() !== '') {
+          submitButton.disabled = false;
+        } else {
+          submitButton.disabled = true;
+        }
+      });
+    });
+  </script>
 </head>
 <body class="flex items-center justify-center h-screen bg-gray-900 text-white">
   <div class="w-full max-w-2xl p-6 bg-gray-800 rounded-lg shadow-md">
